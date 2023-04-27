@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="fs-3">
   <strong>Title:</strong>
   <%= @game.title %>
 </p>
 
-<p>
+<p class="fs-3">
   <strong>Description:</strong>
   <%= @game.description %>
 </p>
 
-<p>
+<p class="fs-3">
   <strong>Rating:</strong>
   <%= @game.rating %>
 </p>
 
-<p>
+<p class="fs-3">
   <strong>Playtime:</strong>
   <%= @game.playTime %>
 </p>
 
-<%= link_to 'Edit', edit_game_path(@game) %> |
-<%= link_to 'Back', games_path %>
+<td><%= link_to 'Edit', edit_game_path(@game), class:"text-light btn btn-lg btn-success" %></td> |
+<td><%= link_to 'Back', games_path, class:"text-light btn btn-lg btn-success" %></td>
